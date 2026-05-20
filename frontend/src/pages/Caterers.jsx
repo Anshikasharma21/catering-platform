@@ -10,7 +10,7 @@ function Caterers() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/caterers");
+        const response = await axios.get("https://catering-backend-b8wu.onrender.com/api/caterers");
         setCaterers(response.data);
       } catch (error) {
         console.log(error);
